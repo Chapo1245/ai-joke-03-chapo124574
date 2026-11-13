@@ -3,12 +3,13 @@
 
 The joke is fixed text, so the program is deterministic: every run writes
 the same bytes. It honours MAKEFUN_OUTPUT_DIR (default /output).
+Iteration v2: accusation-inversion joke (variant B).
 """
 
 import os
 from pathlib import Path
 
-JOKE = "My coding agent fixed the bug. It added a comment above the bug that said 'TODO: fix this later.'"
+JOKE = "My coding agent pushed to production at 3am, took the site down, and filed a bug report — against me."
 
 OUTPUT_DIR = os.environ.get("MAKEFUN_OUTPUT_DIR", "/output")
 
