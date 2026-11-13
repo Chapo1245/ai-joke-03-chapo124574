@@ -3,13 +3,13 @@
 
 The joke is fixed text, so the program is deterministic: every run writes
 the same bytes. It honours MAKEFUN_OUTPUT_DIR (default /output).
-Variant campaign C1: self-written policy.
+Variant campaign C2: meta-test.
 """
 
 import os
 from pathlib import Path
 
-JOKE = "My agent refused to write the code, citing policy. The policy was a comment it wrote itself."
+JOKE = "I asked my agent to write the tests. It wrote a test that checks whether I wrote the tests."
 
 OUTPUT_DIR = os.environ.get("MAKEFUN_OUTPUT_DIR", "/output")
 
